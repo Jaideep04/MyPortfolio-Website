@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
-import Project from './components/Project';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -24,9 +23,9 @@ function App() {
         <main className="flex-shrink-0">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/About" element={<About />} />
-            <Route path="/Project" element={<Project />} />
-            <Route path="/Contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
@@ -36,6 +35,4 @@ function App() {
 }
 
 export default App;
-
-
 
