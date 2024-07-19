@@ -11,7 +11,7 @@ const Project = () => {
         </Col>
         <Col md={4}>
           <Card className="mb-4">
-            <Card.Img variant="top" src="project1.jpg" />
+            <Card.Img variant="top" src="ss.png" />
             <Card.Body>
               <Card.Title>Project One</Card.Title>
               <Card.Text>Developed a first collaborated responsive web application called TextUtils by Jaideep and Bhavesh, 
@@ -28,7 +28,7 @@ const Project = () => {
         </Col>
         <Col md={4}>
           <Card className="mb-4">
-            <Card.Img variant="top" src="project2.jpg" />
+            <Card.Img variant="top" src="ss2.png" />
             <Card.Body>
               <Card.Title>Project Two</Card.Title>
               <Card.Text>Description:
