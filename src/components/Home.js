@@ -1,22 +1,15 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
-const Home = () => {
+const Footer = () => {
   return (
-    <Container className="my-5">
-      <Row className="justify-content-center text-center">
-        <Col md={8}>
-          <h1>Welcome to My Portfolio</h1>
-          <p className="lead">
-            Hi, I'm Jaideep Singh, a web developer passionate about creating interactive and user-friendly websites.
-          </p>
-          <Button variant="primary" href="#about">Learn more</Button>
-        </Col>
-      </Row>
-    </Container>
+    <footer className="py-4 bg-dark text-white-50">
+      <Container className="text-center">
+        <small>&copy; 2024 My Portfolio. All Rights Reserved.</small>
+      </Container>
+    </footer>
   );
 };
 
-export default Home;
-
+export default Footer;
 
