@@ -1,65 +1,140 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #f5f5f5, #e2e2e2);
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 0;
 }
 
-.App header, .App footer {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
+.App.dark-mode {
+  background: linear-gradient(135deg, #181818, #2e2e2e);
+  color: #f5f5f5;
 }
 
-.App main {
-  padding: 20px;
+header {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-h1, h2 {
-  margin-bottom: 20px;
+header .navbar {
+  padding: 0;
 }
 
-.lead {
-  font-size: 1.25rem;
+header .navbar-brand,
+header .nav-link {
+  color: #fff !important;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header .navbar-brand:hover,
+header .nav-link:hover {
+  color: #ffeb3b !important;
+  transform: scale(1.1);
+}
+
+header .btn-toggle-mode {
+  background-color: #ffeb3b;
+  border: none;
+  color: #333;
+  margin-left: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .btn-toggle-mode:hover {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+h2 {
   font-weight: 300;
+  color: #007bff;
+  margin-bottom: 1rem;
 }
 
-#home {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #f8f9fa;
+p {
+  color: #6c757d;
 }
 
-#about, #projects, #contact {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Dark Mode Styles */
-.dark-mode {
-  background-color: #121212;
-  color: white;
+.card-title {
+  font-weight: 500;
+  color: #007bff;
 }
 
-.dark-mode .bg-dark {
-  background-color: #1c1c1e !important;
+.card-text {
+  color: #333;
 }
 
-.dark-mode .card {
-  background-color: #1c1c1e;
-  color: white;
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
 }
 
-.dark-mode .btn-primary {
-  background-color: #bb86fc;
-  border-color: #bb86fc;
+.App.dark-mode footer {
+  background-color: #1c1c1c;
 }
 
-.dark-mode .text-white {
-  color: #e0e0e0 !important;
+.btn-primary {
+  background-color: #007bff;
+  border: none;
 }
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.App {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.navbar {
+  animation: fadeIn 1s ease-in-out;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
 
