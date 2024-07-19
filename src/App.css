@@ -1,0 +1,65 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App header, .App footer {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App main {
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+#home {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f8f9fa;
+}
+
+#about, #projects, #contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .bg-dark {
+  background-color: #1c1c1e !important;
+}
+
+.dark-mode .card {
+  background-color: #1c1c1e;
+  color: white;
+}
+
+.dark-mode .btn-primary {
+  background-color: #bb86fc;
+  border-color: #bb86fc;
+}
+
+.dark-mode .text-white {
+  color: #e0e0e0 !important;
+}
+
